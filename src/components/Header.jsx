@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../styles/header.css"
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <img src="../assets/AGNLogo.png" alt="" />
+    <header class="header">
+      <nav class="d-flex justify-content-between">
+        <img src="/assets/AGNLogo.png" alt="" class="logo"/>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
