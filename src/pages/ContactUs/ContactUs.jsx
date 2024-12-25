@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Header from "../../components/Header/Header.jsx";
 
 const ContactUs = () => {
+  const [isSticky, setIsSticky] = useState(true);
+  
   return (
-    <div>
+    <div class="mt-5">
+      <Header isSticky={isSticky} />
       <h1>About Us</h1>
-      <p>This is the about page content.</p>
+      <p>This is the about ContactUs content.</p>
     </div>
   );
 };

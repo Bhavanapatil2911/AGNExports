@@ -1,4 +1,3 @@
-// HomePage.js
 import React, { useState, useEffect } from "react";
 import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";

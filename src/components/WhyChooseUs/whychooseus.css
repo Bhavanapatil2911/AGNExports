@@ -22,4 +22,23 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
+  .why-choose-us {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .qualities {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quality {
+    width: 22%;
+    text-align: center;
+  }
+  
+  .quality h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
   
