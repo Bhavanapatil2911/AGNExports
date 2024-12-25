@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/header.css"
-const Header = () => {
+import "./header.css"
+const Header = ({ isSticky }) => {
   return (
-    <header class="header">
+    <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <nav class="d-flex justify-content-between">
-        <img src="/assets/AGNLogo.png" alt="" class="logo"/>
+        <img src="src/assets/AGNLogo.png" alt="" class="logo"/>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
@@ -17,3 +17,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

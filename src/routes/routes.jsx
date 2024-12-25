@@ -1,10 +1,10 @@
 // src/routes/routes.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import ContactUs from "../pages/ContactUs";
+import Layout from "../components/Layout/Layout.jsx";
+import Home from "../pages/Home/Home.jsx";
+import About from "../pages/About/About.jsx";
+import ContactUs from "../pages/ContactUs/ContactUs.jsx";
 
 const RoutesConfig = () => {
   return (

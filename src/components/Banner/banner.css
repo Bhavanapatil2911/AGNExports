@@ -1,0 +1,20 @@
+.banner {
+    height: 100vh;
+    background-image: url('../../assets/images.jpeg'); /* Add your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explore-btn {
+    padding: 15px 30px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
