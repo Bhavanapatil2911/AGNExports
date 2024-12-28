@@ -31,6 +31,10 @@ header.sticky .nav-link{
 
 }
 
+#navbarNav{
+  justify-content:end
+}
+
 /* Logo Styles */
 .logo {
   width: 120px;
@@ -91,10 +95,16 @@ header.sticky nav ul li {
 }
 
 @media (max-width: 768px) {
+  nav-items{
+    justify-content:start
+  }
 
   .logo {
     width: 70px;
     height: 70px;
+  }
+  header nav ul {
+    align-items:start; /* Ensure consistent alignment */
   }
 
 }
