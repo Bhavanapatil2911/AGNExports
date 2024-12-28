@@ -18,8 +18,8 @@ header.sticky {
 
 /* Logo Styles */
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import MainLogo from "../../images/AGN-Photoroom.png";
+import MainLogo from "../../images/AGN-Photoroom4x3.png";
 
 const Header = ({ isSticky }) => {
   return (
