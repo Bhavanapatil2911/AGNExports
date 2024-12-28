@@ -5,7 +5,8 @@ const Header = ({ isSticky }) => {
   return (
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <nav class="d-flex justify-content-between">
-        <img src="src/assets/AGNLogo.png" alt="" class="logo"/>
+        {/* <img src="" alt="" class = "logo"/> */}
+        <img src="../../assets/AGNLogo.png" alt="" />
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
