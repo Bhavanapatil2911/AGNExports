@@ -1,3 +1,8 @@
+/* home.css or a global stylesheet */
+.container-lg{
+  max-width: 100%!important;
+}
+
 /* General Header Styles */
 header {
   position: absolute;
@@ -12,8 +17,18 @@ header {
 header.sticky {
   position: fixed;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header.sticky .nav-link{
+  color: var(--secondary-color);
+}
+
+
+.navbar-nav .nav-link.active{
+  color: var(--secondary-color) !important;
+  font-weight: 700;
+
+
 }
 
 /* Logo Styles */
@@ -46,11 +61,22 @@ header nav ul li {
   transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
 
-header nav ul li:hover {
+.nav-link:hover {
   border-radius: 25px;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--secondary-color)!important;
   transform: scale(1.1); /* Slightly enlarge the list item */
+}
+
+.navbar-toggler{
+  /* border: 1px solid var(--primary-color) !important; */
+  background:var(--secondary-color) !important;
+  border: 0.5px solid var(--secondary-color) !important;
+  padding:5px 7px !important;
+
+} 
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 
@@ -64,5 +90,12 @@ header.sticky nav ul li {
   color: var(--secondary-color);
 }
 
+@media (max-width: 768px) {
 
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+}
 

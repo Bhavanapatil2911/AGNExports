@@ -5,6 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.css'; // Optional: Your own global styles
+// index.js or App.js
+
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Bootstrap Icons
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
