@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 const Layout = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Outlet /> {/* This renders child components (Home, About, etc.) */}
       </main>

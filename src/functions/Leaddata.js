@@ -1,53 +1,32 @@
 const functions = require('firebase-functions');
-const { google } = require('googleapis');
-const path = require('path');
 const admin = require('firebase-admin');
-const serviceAccount = require(path.join(__dirname, 'path-to-your-service-account-file.json'));
 
 // Initialize Firebase Admin SDK
 admin.initializeApp();
 
-// Authenticate Google Sheets API
-const sheets = google.sheets('v4');
-const auth = new google.auth.GoogleAuth({
-  credentials: serviceAccount,
-  scopes: ['https://www.googleapis.com/auth/spreadsheets'], // Correct scope for Sheets API
-});
-
-// Define your Google Sheet ID and sheet name
-const SPREADSHEET_ID = '1YZ8LICXO1GkruOMJndUjTh4tdIh5qVnOGaEaf8NYFU0'; // Correct Spreadsheet ID
-const SHEET_NAME = 'Sheet1'; // Replace with the name of the sheet/tab in your spreadsheet
+// Firebase Realtime Database or Firestore reference
+const db = admin.firestore(); // Firestore example, or you can use admin.database() for Realtime Database
 
 // Firebase Function to handle form submission
 exports.submitForm = functions.https.onCall(async (data, context) => {
   const { name, email, message } = data;
 
-  // Get the Google Sheets API client
-  const client = await auth.getClient();
-
-  // Define the data to append to the sheet
-  const newRow = [
+  // Create a document reference for Firestore
+  const newLeadRef = db.collection('leads').doc(); // For Firestore, we can dynamically create a document
+  const newLead = {
     name,
     email,
     message,
-    new Date().toISOString(), // Timestamp for when the data is added
-  ];
+    timestamp: admin.firestore.FieldValue.serverTimestamp(), // Automatically adds a timestamp
+  };
 
   try {
-    // Append data to Google Sheets
-    await sheets.spreadsheets.values.append({
-      spreadsheetId: SPREADSHEET_ID,
-      range: `${SHEET_NAME}!A:D`, // Adjust range depending on columns
-      valueInputOption: 'RAW',
-      resource: {
-        values: [newRow],
-      },
-      auth: client,
-    });
+    // Store the form data in Firestore
+    await newLeadRef.set(newLead);
 
     return { message: 'Form submitted successfully!' };
   } catch (error) {
-    console.error('Error writing to Google Sheets:', error);
+    console.error('Error saving form data to Firestore:', error);
     return { message: 'Failed to submit the form. Please try again later.' };
   }
 });

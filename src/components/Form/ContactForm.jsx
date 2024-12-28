@@ -1,69 +1,62 @@
-import React, { useState } from 'react';
-import { httpsCallable } from 'firebase/functions';
-import { functions } from '../config/firebase';  // Import the functions from firebase.js
+// src/components/Form/ContactForm.jsx
+import { useState } from 'react';
+import { db, addDoc, collection } from '../../firebase/firebase';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
-  // Handle input field changes
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Submitting...');
-
-    const submitForm = httpsCallable(functions, 'submitForm'); // Call the Firebase function
 
     try {
-      const result = await submitForm(formData);
-      setStatus(result.data.message); // Display success message from Firebase function
-    } catch (error) {
-      setStatus('Submission failed, please try again.'); // Handle any errors
+      // Create a new document in Firestore
+      const docRef = await addDoc(collection(db, 'contactForms'), {
+        name,
+        email,
+        message,
+        timestamp: new Date(),
+      });
+      setStatus('Form submitted successfully!');
+      console.log('Document written with ID: ', docRef.id);
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (e) {
+      setStatus('Error submitting the form. Please try again.');
+      console.error('Error adding document: ', e);
     }
   };
 
   return (
-    <div className="contact-form">
+    <div>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Your Message"
+          required
+        />
         <button type="submit">Submit</button>
       </form>
-      <p>{status}</p> {/* Show the status message */}
+      {status && <p>{status}</p>}
     </div>
   );
 };
