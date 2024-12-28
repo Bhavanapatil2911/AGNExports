@@ -1,49 +1,45 @@
-.logo{
-    width: 50px;
-    height: 50px;
+/* General Header Styles */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
-header{
-    background-color: #8c1818;
-}
-.header {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sticky {
-    background-color: #333;
-    color: white;
-  }
-  
 
-  header {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-  
-  header.sticky {
-    position: fixed;
-    background-color: #333;
-    color: white;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  header nav ul li {
-    margin: 0 15px;
-    cursor: pointer;
-  }
-  
-  header.sticky nav ul li {
-    color: white;
-  }
+header.sticky {
+  position: fixed;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Logo Styles */
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navigation Styles */
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Added for consistency */
+}
+
+header nav ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+header.sticky nav ul li {
+  color: var(--secondary-color);
+}
+
+.header {
+  background-color: transparent; /* This is redundant, already in `header` */
+}

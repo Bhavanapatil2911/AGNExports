@@ -4,9 +4,8 @@ import './banner.css';
 const Banner = () => {
   return (
     <section className="banner">
-      <div className="banner-content">
-        <h1>Welcome to Our Website</h1>
-        <button className="explore-btn">Explore</button>
+      <div className="banner-content align-self-end mb-5">
+        <button className="explore-btn rounded-pill mb-4">Explore</button>
       </div>
     </section>
   );
