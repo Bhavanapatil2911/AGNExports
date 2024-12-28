@@ -13,7 +13,7 @@ header.sticky {
   position: fixed;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Styles */
@@ -34,26 +34,32 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center; /* Ensure consistent alignment */
 }
 
+
 header nav ul li {
-  margin: 0 15px;
+  margin: 10px 15px;
   cursor: pointer;
   color: var(--primary-color);
-  transition: color 0.3s ease; /* Smooth color transition */
+  padding: 5px 10px; /* Add padding to maintain consistent spacing */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
+
+header nav ul li:hover {
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+
+
+
+
+
+
 
 header.sticky nav ul li {
   color: var(--secondary-color);
-}
-
-/* Optional: Add hover effect for links */
-header nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-  color: var(--accent-color); /* Change the hover color */
 }
