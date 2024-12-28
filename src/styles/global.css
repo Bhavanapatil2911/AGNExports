@@ -5,6 +5,7 @@
 :root {
     --primary-color: #0d2d06; /* Blue */
     --secondary-color: #e7c176; /* Green */
+    --golden-color :#f4c842;
   }
 a{
     text-decoration: none;
