@@ -6,8 +6,11 @@ import MainLogo from "../../images/AGN-Photoroom4x3.png";
 const Header = ({ isSticky }) => {
   return (
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
+      <div className="contactdetails">
+        
+      </div>
       <nav class="d-flex justify-content-between align-items-center" >
-        <img src={MainLogo} alt="" class="logo"/>
+      <Link to="/"><img src={MainLogo} alt="" class="logo"/></Link>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>

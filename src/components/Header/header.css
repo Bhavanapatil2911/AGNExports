@@ -41,7 +41,7 @@ header nav ul {
 header nav ul li {
   margin: 10px 15px;
   cursor: pointer;
-  color: var(--primary-color);
+  color: black; /*font color before sticky */
   padding: 5px 10px; /* Add padding to maintain consistent spacing */
   transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
@@ -50,7 +50,7 @@ header nav ul li:hover {
   border-radius: 25px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  font-weight: 700;
+  transform: scale(1.1); /* Slightly enlarge the list item */
 }
 
 
@@ -63,3 +63,6 @@ header nav ul li:hover {
 header.sticky nav ul li {
   color: var(--secondary-color);
 }
+
+
+
