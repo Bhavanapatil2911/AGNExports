@@ -43,13 +43,13 @@ const Footer = () => {
             <h4>Contact Details</h4>
             <ul>
               <li>
-                <strong>Address:</strong> Nandya, Street No. 25, Kurnool, Andhra Pradesh 518001, India
+                <strong>Address:</strong>D.no:1/75,76,Main bazar Rd,Sri potti sri ramulu colony,Telugu peta,Nandyal,Andhra Pradesh,518501.
               </li>
               <li>
-                <strong>Phone:</strong> +91 9876543210
+                <strong>Phone:</strong> +91 9849782405
               </li>
               <li>
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong> Gurusainath.saru@gmail.com
               </li>
             </ul>
 

@@ -37,8 +37,8 @@ header.sticky .nav-link{
 
 /* Logo Styles */
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 

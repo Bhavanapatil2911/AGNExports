@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom"; // Use useLocation to track route changes
 import "./header.css";
-import MainLogo from "../../images/AGN-Photoroom4x3.png";
+import MainLogo from "../../images/NewLogo-removebg-preview2 1.png";
 
 const Header = ({ isSticky }) => {
   // State to track if the navbar is sticky and dropdown state
