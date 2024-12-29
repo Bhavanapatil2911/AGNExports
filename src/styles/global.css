@@ -2,3 +2,14 @@
     background-color: #4caf50 !important; /* Overrides Bootstrap */
 }
   
+:root {
+    --primary-color: #0d2d06; /* Blue */
+    --secondary-color: #e7c176; /* Green */
+    --golden-color :#f4c842;
+  }
+a{
+    text-decoration: none;
+    color: inherit;
+}  
+  
+  

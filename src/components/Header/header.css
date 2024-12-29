@@ -1,49 +1,111 @@
-.logo{
-    width: 50px;
-    height: 50px;
+/* home.css or a global stylesheet */
+.container-lg{
+  max-width: 100%!important;
 }
-header{
-    background-color: #8c1818;
-}
-.header {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sticky {
-    background-color: #333;
-    color: white;
-  }
-  
 
-  header {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: background-color 0.3s ease;
+/* General Header Styles */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.sticky {
+  position: fixed;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header.sticky .nav-link{
+  color: var(--secondary-color);
+}
+
+
+.navbar-nav .nav-link.active{
+  color: var(--secondary-color) !important;
+  font-weight: 700;
+
+
+}
+
+#navbarNav{
+  justify-content:end
+}
+
+/* Logo Styles */
+.logo {
+  width: 130px;
+  height: 130px;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+header.sticky .logo {
+  transform: scale(1.1); /* Slightly scale the logo when sticky */
+}
+
+/* Navigation Styles */
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center; /* Ensure consistent alignment */
+}
+
+
+header nav ul li {
+  margin: 10px 15px;
+  cursor: pointer;
+  color: black; /*font color before sticky */
+  padding: 5px 10px; /* Add padding to maintain consistent spacing */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.nav-link:hover {
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color)!important;
+  transform: scale(1.1); /* Slightly enlarge the list item */
+}
+
+.navbar-toggler{
+  /* border: 1px solid var(--primary-color) !important; */
+  background:var(--secondary-color) !important;
+  border: 0.5px solid var(--secondary-color) !important;
+  padding:5px 7px !important;
+
+} 
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+header.sticky nav ul li {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  nav-items{
+    justify-content:start
   }
-  
-  header.sticky {
-    position: fixed;
-    background-color: #333;
-    color: white;
+
+  .logo {
+    width: 70px;
+    height: 70px;
   }
-  
   header nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
+    align-items:start; /* Ensure consistent alignment */
   }
-  
-  header nav ul li {
-    margin: 0 15px;
-    cursor: pointer;
-  }
-  
-  header.sticky nav ul li {
-    color: white;
-  }
+
+}
+
