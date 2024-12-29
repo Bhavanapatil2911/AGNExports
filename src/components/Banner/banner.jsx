@@ -6,16 +6,13 @@ import bannerImage from '../../images/rice-field-1866498_1920.jpg';
 
 const Banner = () => {
   return (
-    <section
-      className="banner"
-      style={{
-        backgroundImage: `url(${bannerImage})`,
-      }}
-    >
-      <div className="banner-content align-self-end mb-5">
-      <Link className="nav-link" to="/products"><button className="explore-btn rounded-pill ">Explore</button>
-      </Link>
-
+    <section className="banner">
+      <div className="zoom-out-background mb-5">
+        {/* <div className="banner-content">
+          <Link className="nav-link" to="/products">
+            <button className="explore-btn rounded-pill ">Explore</button>
+          </Link> 
+        </div>        */}
       </div>
     </section>
   );
