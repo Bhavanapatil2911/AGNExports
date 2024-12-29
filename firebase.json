@@ -1,20 +1,7 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "/**",
-        "destination": "/index.html"
-      }
-    ]
-  },
-  "functions": {
-    "source": "functions"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "emulators": {
     "dataconnect": {
