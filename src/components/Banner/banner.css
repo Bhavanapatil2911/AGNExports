@@ -14,7 +14,7 @@
   height: 100%;
   width: 100%;
   background-image: url('../../images/rice-field-1866498_1920.jpg');
-  background-size: 120%; /* Start zoomed in */
+  background-size: 100%; /* Start zoomed in */
   background-position: center;
   position: relative;
   animation: zoomOut 10s infinite ease-out; /* Smooth and infinite animation */
@@ -23,10 +23,10 @@
 
 @keyframes zoomOut {
   0% {
-    transform: scale(1.2); /* Start slightly zoomed in */
+    transform: scale(1.2); 
   }
   100% {
-    transform: scale(1); /* Zoom back in */
+    transform: scale(1);
   }
 }
 
