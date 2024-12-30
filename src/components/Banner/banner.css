@@ -18,7 +18,7 @@
   background-size: 100%; /* Start zoomed in */
   background-position: center;
   position: relative;
-  animation: zoomOut 10s infinite ease-out; /* Smooth and infinite animation */
+  animation: zoomOut 15s infinite ease-out; /* Smooth and infinite animation */
 }
 
 
