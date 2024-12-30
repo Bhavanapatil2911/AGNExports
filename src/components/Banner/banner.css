@@ -1,5 +1,3 @@
-@import '../../styles/global.css';
-
 .banner {
   overflow: hidden;
   height: 100vh; /* Full height of the viewport */
@@ -17,10 +15,10 @@
   background-image: url('../../images/rice-field-1866498_1920.jpg');
   background-size: cover; /* Ensure background image fully covers the container */
   background-position: center;
-  display: flex; /* Apply flexbox here */
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  position: relative; /* To maintain the background position */
+  position: absolute; /* Make the background independent of banner-content */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Send the background behind the content */
   animation: zoomOut 15s infinite ease-in; /* Smooth and infinite zoom-out animation */
 }
 
@@ -33,21 +31,16 @@
   }
 }
 
-/* Center the button and adjust its vertical position */
 .banner-content {
-  display: flex; /* Center content inside it */
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 70%; /* Place the element in the middle vertically */
-  transform: translateY(-20%); /* Move it 20% upwards from the center */
+  position: relative; /* Position content independently from the background */
+  z-index: 2; /* Ensure it stays above the animated background */
+  text-align: center;
+  height: 100%;
 }
-.tagline{
-  color: black;
-  font-size: 22px;
 
-}
 .explore-btn {
+  position: absolute;
+  bottom: 20%;
   padding: 10px 25px;
   font-size: 18px;
   background-color: var(--secondary-color);
