@@ -28,7 +28,7 @@ const Header = ({ isSticky }) => {
         {/* Your contact details can go here */}
       </div>
       <nav className="navbar navbar-expand-lg">
-        <div className="container-lg">
+        <div  className={`container-lg ${isSticky || stickbool ? 'align-items-start' : ''}`}>
 
           <div className="navbar-brand">
             <Link to="/"><img src={MainLogo} alt="Logo" className="logo" /></Link>
