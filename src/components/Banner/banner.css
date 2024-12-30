@@ -1,57 +1,60 @@
 @import '../../styles/global.css';
 
-
 .banner {
   overflow: hidden;
-  height: 100vh;
+  height: 100vh; /* Full height of the viewport */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
   color: white;
   text-align: center;
+  position: relative;
 }
 
 .zoom-out-background {
   height: 100%;
   width: 100%;
   background-image: url('../../images/rice-field-1866498_1920.jpg');
-  background-size: 100%; /* Start zoomed in */
+  background-size: cover; /* Ensure background image fully covers the container */
   background-position: center;
-  position: relative;
-  animation: zoomOut 15s infinite ease-out; /* Smooth and infinite animation */
+  display: flex; /* Apply flexbox here */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  position: relative; /* To maintain the background position */
+  animation: zoomOut 15s infinite ease-in; /* Smooth and infinite zoom-out animation */
 }
-
 
 @keyframes zoomOut {
   0% {
-    transform: scale(1.2); 
+    transform: scale(1.2); /* Start with the image zoomed in */
   }
   100% {
-    transform: scale(1);
+    transform: scale(1); /* Zoom out to normal */
   }
 }
 
-
-/* .banner-content {
+/* Center the button and adjust its vertical position */
+.banner-content {
+  display: flex; /* Center content inside it */
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  bottom: 0px;
-  margin: auto;
-  /* display: flex;
-  /* justify-content: center;
-  max-width: 80%;
-  padding: 20px;
-} */
+  top: 70%; /* Place the element in the middle vertically */
+  transform: translateY(-20%); /* Move it 20% upwards from the center */
+}
+.tagline{
+  color: black;
+  font-size: 22px;
 
-
-
-/* .explore-btn {
-  padding: 10px 20px;
+}
+.explore-btn {
+  padding: 10px 25px;
+  font-size: 18px;
   background-color: var(--secondary-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 16px;
-  color: var(--primary-color);
   transition: all 0.3s ease;
 }
 
@@ -59,8 +62,7 @@
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-weight: 700;
-} */
-
+}
 
 @media (max-width: 768px) {
   .banner {
@@ -72,4 +74,3 @@
     font-size: 14px;
   }
 }
-

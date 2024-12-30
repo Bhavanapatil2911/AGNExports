@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
+import About from "../../components/About/About.jsx";
 import './Home.css'; // Optional for homepage-specific styling
 
 const Home = () => {
@@ -26,7 +27,8 @@ const Home = () => {
     <div className="home-page">
       <Header isSticky={isSticky} />
       <Banner />
-      <WhyChooseUs />
+      <About />
+      {/* <WhyChooseUs /> */}
     </div>
   );
 };
