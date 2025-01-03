@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout.jsx";
 import Home from "../pages/Home/Home.jsx";
 import About from "../components/About/About.jsx";
 import ContactUs from "../pages/ContactUs/ContactUs.jsx";
-import Products from "../pages/Products/Products.jsx";
+import ProductsPage from "../pages/ProductsPage/ProductsPage.jsx";
 import ContactForm from "../components/Form/ContactForm.jsx"
 
 const RoutesConfig = () => {
@@ -15,7 +15,7 @@ const RoutesConfig = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="form" element={<ContactForm />} />
-        <Route path="products" element={<Products />} />
+        <Route path="products" element={<ProductsPage />} />
         <Route path="contact" element={<ContactUs />} />
       </Route>
     </Routes>

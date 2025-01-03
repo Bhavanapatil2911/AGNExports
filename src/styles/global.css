@@ -1,6 +1,10 @@
 .btn-primary {
     background-color: #4caf50 !important; /* Overrides Bootstrap */
 }
+
+* {
+    font-family: Poppins;
+}
   
 :root {
     --primary-color: #0d2d06; /* Blue */

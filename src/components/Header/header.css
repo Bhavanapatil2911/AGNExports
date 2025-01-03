@@ -20,16 +20,21 @@ header.sticky {
   background-color: var(--primary-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 header.sticky .nav-link{
   color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link{
+  font-weight: 500;
+  font-size: 18px;
+
 }
 
 
 .navbar-nav .nav-link.active{
   color: var(--secondary-color) !important;
   font-weight: 700;
-
-
 }
 
 #navbarNav{
@@ -63,7 +68,7 @@ header nav ul li {
   cursor: pointer;
   color: black; /*font color before sticky */
   padding: 5px 10px; /* Add padding to maintain consistent spacing */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  transition: color 0.5s ease, background-color 0.3s ease; /* Smooth transitions */
 }
 
 .nav-link:hover {
