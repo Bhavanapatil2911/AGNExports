@@ -28,7 +28,7 @@ const Home = () => {
       <Header isSticky={isSticky} />
       <Banner />
       <About />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
     </div>
   );
 };

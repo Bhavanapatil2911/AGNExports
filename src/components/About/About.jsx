@@ -5,7 +5,7 @@ import videoSrc from "../../images/184811-874264378_small.mp4";
 const About = () => {
   return (
     <>
-      <div className="row p-md-4 mx-md-4 m-2 aboutus d-flex justify-content-between">
+      <div className="row p-md-4 mx-md-4 m-2 aboutus d-flex justify-content-center">
         <div className="col-md-6">
           <div className="content m-md-5 px-md-5">
             <h1>About Us</h1>
