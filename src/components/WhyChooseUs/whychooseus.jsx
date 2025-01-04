@@ -1,29 +1,9 @@
 import React from "react";
 import './whychooseus.css';
+import videoSrc from "../../images/newbannervideo.mp4";
+
 
 const WhyChooseUs = () => {
-  // const cardData = [
-  //   {
-  //     title: "Unmatched Quality",
-  //     content: "Our rice is selected for its aroma, taste, and texture, meeting the highest international standards."
-  //   },
-  //   {
-  //     title: "Global Reach",
-  //     content: "We have the expertise and logistics to serve clients worldwide, ensuring reliable and timely deliveries."
-  //   },
-  //   {
-  //     title: "Custom Solutions",
-  //     content: "We offer packaging and branding tailored to your specific needs."
-  //   },
-  //   {
-  //     title: "Sustainable & Ethical Practices",
-  //     content: "We are committed to supporting farmers and protecting the environment through sustainable sourcing."
-  //   },
-  //   {
-  //     title: "Customer-Centric Service",
-  //     content: "We focus on building lasting relationships with our clients, ensuring seamless transactions and unparalleled service."
-  //   }
-  // ];
   const cardData = [
     {
       title: "Premium Quality",
@@ -43,22 +23,25 @@ const WhyChooseUs = () => {
     }
   ];
   
-  
   return (
     <section className="row why-choose-us d-flex m-0">
-      <div className="col-3 d-flex align-items-center justify-content-center flex-column" >
-      <h1 className="blockheader">Why Choose Us?</h1>
-      <p className="text-center">Choose us for authentic basmati rice delivered with a commitment to quality, sustainability, and excellence. Partner with us for a dependable supply chain that adds value to your business.</p>
+      <video autoPlay muted loop className="w-100 p-0">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="col-4 d-flex align-items-center justify-content-center flex-column">
+        <h1 className="blockheader">Why Choose Us?</h1>
+        <p className="text-center">Choose us for authentic basmati rice delivered with a commitment to quality, sustainability, and excellence. Partner with us for a dependable supply chain that adds value to your business.</p>
       </div>
-      <div className="col-9">      
-      <div className="row card-container my-2 justify-content-center">
-        {cardData.map((card, index) => (
-          <div className="card col-5" key={index}>
-            <h3>{card.title}</h3>
-            <p>{card.content}</p>
-          </div>
-        ))}
-      </div>
+      <div className="col-8">
+        <div className="row gap-4 card-container my-2 justify-content-center m-0">
+          {cardData.map((card, index) => (
+            <div className="card col-5" key={index}>
+              <h3>{card.title}</h3>
+              <p>{card.content}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
