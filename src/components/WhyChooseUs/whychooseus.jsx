@@ -1,5 +1,5 @@
 import React from "react";
-import './whychooseus.css';
+import './whychooseus.scss';
 import videoSrc from "../../images/newbannervideo.mp4";
 
 
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
   ];
   
   return (
-    <section className="row why-choose-us d-flex m-0">
+    <section className="row why-choose-us d-flex m-0 py-5">
       <video autoPlay muted loop className="w-100 p-0">
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
