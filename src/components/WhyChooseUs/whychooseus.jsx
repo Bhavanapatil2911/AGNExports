@@ -45,16 +45,20 @@ const WhyChooseUs = () => {
   
   
   return (
-    <section className="why-choose-us d-flex align-items-center flex-column">
+    <section className="row why-choose-us d-flex m-0">
+      <div className="col-3 d-flex align-items-center justify-content-center flex-column" >
       <h1 className="blockheader">Why Choose Us?</h1>
-      <p className="w-50 text-center">Choose us for authentic basmati rice delivered with a commitment to quality, sustainability, and excellence. Partner with us for a dependable supply chain that adds value to your business.</p>
-      <div className="row card-container mx-4 my-2">
+      <p className="text-center">Choose us for authentic basmati rice delivered with a commitment to quality, sustainability, and excellence. Partner with us for a dependable supply chain that adds value to your business.</p>
+      </div>
+      <div className="col-9">      
+      <div className="row card-container my-2 justify-content-center">
         {cardData.map((card, index) => (
           <div className="card col-5" key={index}>
             <h3>{card.title}</h3>
             <p>{card.content}</p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

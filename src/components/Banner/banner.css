@@ -12,22 +12,22 @@
 .zoom-out-background {
   height: 100%;
   width: 100%;
-  background-image: url('../../images/vietnam-3738879_1920.jpg');
+  background-image: url('../../images/rice-field-1866498_1920.jpg');
   background-size: cover; /* Ensure background image fully covers the container */
   background-position: center;
   position: absolute; /* Make the background independent of banner-content */
   top: 0;
   left: 0;
   z-index: 1; /* Send the background behind the content */
-  animation: zoomOut 15s infinite ease-in; /* Smooth and infinite zoom-out animation */
+ animation: zoomOut 15s infinite ease-in; /*Smooth and infinite zoom-out animation */
 }
 
 @keyframes zoomOut {
   0% {
-    transform: scale(1.2); /* Start with the image zoomed in */
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1); /* Zoom out to normal */
+    transform: scale(1); 
   }
 }
 
