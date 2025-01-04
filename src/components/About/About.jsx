@@ -22,7 +22,7 @@ const About = () => {
             <p>
               Based in India, the world’s leading exporter of aromatic Basmati
               rice, AGN Exports is driven by a passion for quality and a
-              commitment to ethical trade. With years of expertise in sourcing
+              commitment to ethical trade. We are sourcing
               and exporting, we are dedicated to providing our global clients
               with the highest-quality Basmati rice and exceptional service. Our
               goal is simple – to bring the authentic taste of India’s premium

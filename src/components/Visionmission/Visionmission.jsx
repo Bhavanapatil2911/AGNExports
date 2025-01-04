@@ -35,7 +35,7 @@ const Visionmission = () => {
   return (
     <div
       ref={sectionRef}
-      className={`row justify-content-center p-5 visionmission ${
+      className={`row justify-content-center p-5 visionmission m-0 ${
         isVisible ? "animate" : ""
       }`}
     >

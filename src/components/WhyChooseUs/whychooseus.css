@@ -2,9 +2,17 @@
   text-align: center;
   padding: 20px;
   background-color: #F5F7F8;
-  /* background-image: url('../../images/paper-1468883_1280.jpg');
+  /* background-image: url('../../images/storm-5220380_1280.jpg'); */
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  
+
+}
+
+
+.why-choose-us::before{
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+
 
 }
 
@@ -16,6 +24,7 @@
 }
 
 .card {
+  background-color: none;
   flex: 1 1 calc(30% - 20px); /* Adjust width to fit 3 cards per row with spacing */
   max-width: 300px;
   border: 1px solid #ddd;

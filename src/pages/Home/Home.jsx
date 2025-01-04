@@ -32,7 +32,6 @@ const Home = () => {
       <About />
       <Products/>
       <WhyChooseUs />
-      <Visionmission/>
     </div>
   );
 };
