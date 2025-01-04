@@ -1,6 +1,7 @@
-.aboutus{
-    
+.aboutus {
+    background-color: rgb(232, 184, 109);
 }
+
 h1{
     color: var(--primary-color);
 }

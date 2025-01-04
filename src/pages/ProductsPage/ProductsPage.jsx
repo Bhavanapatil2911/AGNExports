@@ -7,8 +7,6 @@ const ProductsPage = () => {
   return (
     <div class="mt-5">
       <Header isSticky={isSticky} />
-      <h1>Products Us</h1>
-      <p>This is the Product page content.</p>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
+import Products from "../../components/Products/Products.jsx"
 import './Home.css'; // Optional for homepage-specific styling
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
       <Banner />
       <About />
       <WhyChooseUs />
+      <Products/>
     </div>
   );
 };

@@ -15,5 +15,10 @@ a{
     text-decoration: none;
     color: inherit;
 }  
+.blockheader{
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px;
+}
   
   
