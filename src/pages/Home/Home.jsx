@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/banner.jsx";
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
 import Products from "../../components/Products/Products.jsx"
+import Visionmission from "../../components/Visionmission/Visionmission.jsx"
 import './Home.css'; // Optional for homepage-specific styling
 
 const Home = () => {
@@ -29,8 +30,9 @@ const Home = () => {
       <Header isSticky={isSticky} />
       <Banner />
       <About />
-      <WhyChooseUs />
       <Products/>
+      <WhyChooseUs />
+      <Visionmission/>
     </div>
   );
 };
