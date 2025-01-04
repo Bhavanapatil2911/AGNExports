@@ -1,7 +1,11 @@
-.visionmission{
+.visionmission {
     background-color: #85A947;
-}
-.visionmission *{
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .visionmission *{
     color: white;
 }
 h3{
@@ -14,8 +18,34 @@ span{
 p{
     text-align: justify;
 }
-
-
 .vision{
     border-right: 3px solid white;
 }
+  
+  .visionmission.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .visionmission.animate .fade-in-left {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .visionmission.animate .fade-in-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
