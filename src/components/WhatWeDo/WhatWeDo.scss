@@ -1,0 +1,61 @@
+.whatwedo {
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff); /* Subtle gradient background */
+    padding: 60px 20px;
+    
+    .blockheader {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50; /* Dark blue-gray */
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .agn-exports-section {
+      .section-title {
+        font-size: 1.8rem;
+        color: #27ae60; /* Green */
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+  
+      .section-subtitle {
+        font-size: 1.2rem;
+        color: #7f8c8d; /* Gray */
+        margin-bottom: 30px;
+      }
+  
+      .specialization-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 700px;
+  
+        li {
+          font-size: 1.1rem;
+          color: #34495e; /* Navy */
+          line-height: 1.8;
+          margin-bottom: 20px;
+          text-align: left;
+          padding-left: 30px;
+          position: relative;
+  
+          &:before {
+            content: "\f00c"; /* Font Awesome check icon */
+            font-family: "Font Awesome 6 Free"; /* Ensure Font Awesome is loaded */
+            font-weight: 900;
+            color: #27ae60; /* Green check icon */
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateY(0.3rem);
+          }
+  
+          strong {
+            color: #2c3e50; /* Bold text */
+          }
+        }
+      }
+    }
+  }
+  
