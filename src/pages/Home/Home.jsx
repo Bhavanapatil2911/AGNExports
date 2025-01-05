@@ -38,8 +38,8 @@ const Home = () => {
     <div className="home-page">
       <Header isSticky={isSticky} />
       <Banner />
-      <Products />
       <About />
+      <Products />
       <WhyChooseUs />
       <WhatWeDo />
       <Footer />
