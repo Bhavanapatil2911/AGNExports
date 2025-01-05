@@ -9,7 +9,7 @@ const Banner = () => {
     <section className="banner">
       <div className="zoom-out-background"></div>
       <div className="banner-content d-flex flex-column align-items-center">
-        <Link className="nav-link" to="/products">
+        <Link className="nav-link d-flex justify-content-center" to="/products">
           <button className="explore-btn rounded-pill">Explore</button>
         </Link>
       </div>

@@ -11,7 +11,7 @@ const Layout = () => {
       <main>
         <Outlet /> {/* This renders child components (Home, About, etc.) */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

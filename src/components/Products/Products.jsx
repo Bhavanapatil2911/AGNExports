@@ -5,7 +5,7 @@ const Products = () => {
     return(
         <>
             <section className="products  p-4 text-center">
-            <h1 className="blockheader mb-3">Rice We Deal With</h1>
+            <h1 className="blockheader mb-4">Rice We Deal With</h1>
                 <div className="row d-flex justify-content-center gap-2" >
 
                     <div className="col-3">
@@ -50,6 +50,9 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
+                <button className="primaryBtn mt-5 p-3 rounded-pill">
+                    Our Products
+                </button>
 
             </section>
         </>
