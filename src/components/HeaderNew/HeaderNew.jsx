@@ -8,7 +8,9 @@ const HeaderNew = () => {
             <div className="logo col-2">
                 <img src={MainLogo} alt="" />
             </div>
-            div.col-5
+            <div className="col-5">
+                
+            </div>
 
         </div>
         </>

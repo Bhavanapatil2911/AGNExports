@@ -43,14 +43,14 @@ header.sticky .nav-link{
 
 /* Logo Styles */
 .logo {
-  width: 250px;
-  height: 170px;
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  width: 170px;
+  height: 80px;
+  /* transition: transform 0.3s ease; Smooth scaling effect */
 }
 
-header.sticky .logo {
-  transform: scale(1.1); /* Slightly scale the logo when sticky */
-}
+/* header.sticky .logo {
+  transform: scale(1.1); 
+} */
 
 /* Navigation Styles */
 header nav ul {
@@ -100,14 +100,19 @@ header.sticky nav ul li {
   color: var(--secondary-color);
 }
 
+header.sticky > .navbar .logo {
+  width: 170px !important;
+  height: 80px !important;
+}
+
 @media (max-width: 768px) {
   nav-items{
     justify-content:start
   }
 
   .logo {
-    width: 70px;
-    height: 70px;
+    width: 150px !important;
+    height: 70px !important;
   }
   header nav ul {
     align-items:start; /* Ensure consistent alignment */
