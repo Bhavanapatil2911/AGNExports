@@ -6,7 +6,6 @@ const AboutUs = () => {
   const [isSticky, setIsSticky] = useState(false);
   return (
     <div>
-      <Header isSticky={isSticky} />
       <Visionmission />
     </div>
   );

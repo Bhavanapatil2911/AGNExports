@@ -22,14 +22,14 @@
  animation: zoomOut 15s infinite ease-in; /*Smooth and infinite zoom-out animation */
 }
 
-@keyframes zoomOut {
+/* @keyframes zoomOut {
   0% {
     transform: scale(1.2);
   }
   100% {
     transform: scale(1); 
   }
-}
+} */
 
 .banner-content {
   position: relative; /* Position content independently from the background */

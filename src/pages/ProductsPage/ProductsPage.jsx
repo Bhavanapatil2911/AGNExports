@@ -6,7 +6,6 @@ const ProductsPage = () => {
 
   return (
     <div class="mt-5">
-      <Header isSticky={isSticky} />
       <div className="container">
         
       </div>

@@ -6,7 +6,6 @@ const ContactUs = () => {
   
   return (
     <div class="mt-5">
-      <Header isSticky={isSticky} />
       <h1>About Us</h1>
       <p>This is the about ContactUs content.</p>
     </div>
