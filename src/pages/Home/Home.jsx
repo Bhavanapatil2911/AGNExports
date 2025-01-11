@@ -42,7 +42,7 @@ const Home = () => {
       <Products />
       <WhyChooseUs />
       <WhatWeDo />
-      <Footer />
+      {/* <Footer /> */}
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
   );
