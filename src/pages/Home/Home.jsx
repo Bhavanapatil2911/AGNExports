@@ -39,8 +39,8 @@ const Home = () => {
       <Header isSticky={isSticky} />
       <Banner />
       <About />
-      <RiceCategories />
       <WhyChooseUs />
+      <RiceCategories />
       <WhatWeDo /> 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
