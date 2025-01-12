@@ -43,7 +43,7 @@ function RiceCategories() {
         <div className="row ricecategories justify-content-center">
             {riceCategories.map((category, index) => (
                 <div className="col-md-3" key={index}>
-                    <div className="card">
+                    <div className="card p-3">
                         <img src={riceimage} alt="Basmati Rice" className="mb-3"/>
                         <h4>{category.title}</h4>
 
