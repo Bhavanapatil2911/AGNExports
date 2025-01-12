@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
-import Products from "../../components/Products/Products.jsx";
+import RiceCategories from "../../components/Products/RiceCategories.jsx";
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo.jsx";
 import Visionmission from "../../components/Visionmission/Visionmission.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -39,10 +39,9 @@ const Home = () => {
       <Header isSticky={isSticky} />
       <Banner />
       <About />
-      <Products />
+      <RiceCategories />
       <WhyChooseUs />
-      <WhatWeDo />
-      {/* <Footer /> */}
+      <WhatWeDo /> 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
   );

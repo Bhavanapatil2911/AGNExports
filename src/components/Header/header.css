@@ -22,7 +22,7 @@ header.sticky {
 }
 
 header.sticky .nav-link{
-  color: var(--secondary-color);
+  color: #FFFFFF;
 }
 
 .navbar-nav .nav-link{
@@ -74,7 +74,7 @@ header nav ul li {
 .nav-link:hover {
   border-radius: 25px;
   background-color: var(--primary-color);
-  color: var(--secondary-color)!important;
+  color: #FFFFFF !important;
   transform: scale(1.1); /* Slightly enlarge the list item */
 }
 
@@ -97,7 +97,7 @@ header nav ul li {
 
 
 header.sticky nav ul li {
-  color: var(--secondary-color);
+  color: #FFFFFF;
 }
 
 header.sticky > .navbar .logo {

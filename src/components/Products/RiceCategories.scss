@@ -1,0 +1,22 @@
+.ricecategories{
+    .card{
+        background: none;
+        height: 100%;
+        border-radius: 0px !important;
+        h4{
+            color: black;
+        }
+        img{
+            height: 170px;
+            border-radius: 0px;
+        }
+        ul{
+            text-align: start;
+            list-style: none;
+            li{
+                color: black;
+            }
+        }
+    }
+}
+

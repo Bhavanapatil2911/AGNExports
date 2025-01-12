@@ -12,7 +12,7 @@
 .zoom-out-background {
   height: 100%;
   width: 100%;
-  background-image: url('../../images/rice-field-1866498_1920.jpg');
+  background-image: url('../../images/storm-5220380_1280.jpg');
   background-size: cover; /* Ensure background image fully covers the container */
   background-position: center;
   position: absolute; /* Make the background independent of banner-content */
@@ -43,7 +43,7 @@
   bottom: 20%;
   padding: 10px 25px;
   font-size: 18px;
-  background-color: var(--secondary-color);
+  background-color: #FFFFFF;
   color: var(--primary-color);
   border: none;
   border-radius: 30px;
