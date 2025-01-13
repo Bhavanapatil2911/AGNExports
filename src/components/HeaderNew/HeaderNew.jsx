@@ -17,12 +17,12 @@ const HeaderNew = () => {
 
   return (
     <>
-      <header>
+      <header >
         <div className="contactdetails">
           {/* Your contact details can go here */}
         </div>
         <nav className="navbar navbar-expand-lg">
-          <div>
+          <div className="d-flex justify-content-between px-4 w-100">
 
             <div className="navbar-brand">
               <Link to="/"><img src={MainLogo} alt="Logo" className="logo" /></Link>
@@ -34,7 +34,7 @@ const HeaderNew = () => {
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav" 
               aria-controls="navbarNav" 
-              aria-expanded={dropdownOpen ? "true" : "false"} 
+            //   aria-expanded={dropdownOpen ? "true" : "false"} 
               aria-label="Toggle navigation" 
               onClick={toggleStick} 
             >

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/Header/Header.jsx";
+// import Header from "../../components/Header/Header.jsx";
 
 const ContactUs = () => {
   const [isSticky, setIsSticky] = useState(true);

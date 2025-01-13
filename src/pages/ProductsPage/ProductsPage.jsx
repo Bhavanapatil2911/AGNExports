@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import "./ProductsPage.css"; // Include styles for better presentation
-import Header from "../../components/Header/Header.jsx";
+// import Header from "../../components/Header/Header.jsx";
 import BasmatiRice from "../../components/BasmatiRice.jsx"
 
 
@@ -66,7 +66,6 @@ const ProductsPage = () => {
 
   return (
     <div className="mt-5">
-    <Header isSticky={isSticky} />
     <div className="container py-5 my-5 text-center d-flex flex-column justify-content-center">
       <h3 className="">Our Products</h3>
       <p className="text-center w-75 mx-auto">

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/Header/Header.jsx";
+// import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";
+import Bannernew from "../../components/BannerNew/BannerNew.jsx"
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
 import RiceCategories from "../../components/Products/RiceCategories.jsx";
+import Wedeal from "../../components/Wedeal/Wedeal.jsx"
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo.jsx";
 import Visionmission from "../../components/Visionmission/Visionmission.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -39,10 +41,11 @@ const Home = () => {
     <div className="home-page">
       {/* <Header isSticky={isSticky} /> */}
       {/* <HeaderNew /> */}
-      <Banner />
+      <Bannernew />
       <About />
       <WhyChooseUs />
-      <RiceCategories />
+      {/* <RiceCategories /> */}
+      <Wedeal/>
       <WhatWeDo /> 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>

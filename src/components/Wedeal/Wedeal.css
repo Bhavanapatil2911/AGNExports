@@ -1,0 +1,68 @@
+/* Global Styling */
+  
+  /* Section Styling */
+  .wedealwith {
+    padding: 60px 20px;
+    background-color: rgba(92, 142, 55); /* Dark background */
+    color: #ffffff; /* White text */
+  }
+  
+  .wedealwith h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .wedealwith p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    list-style: none;
+  }
+  
+  /* Icon Styling */
+  .icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 5px solid rgb(135, 185, 97); /* Gold border */
+    border-radius: 50%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .wedealwith {
+      text-align: center;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
