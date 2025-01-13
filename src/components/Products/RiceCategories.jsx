@@ -34,6 +34,13 @@ const riceCategories = [
             "Golden Rice",
         ],
     },
+    {
+        title: "Other Rice",
+        items: [
+            "Brown Rice",
+            "Broken Rice",
+        ],
+    },
 ];
 
 function RiceCategories() {
