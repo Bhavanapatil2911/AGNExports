@@ -8,6 +8,7 @@ import WhatWeDo from "../../components/WhatWeDo/WhatWeDo.jsx";
 import Visionmission from "../../components/Visionmission/Visionmission.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import './Home.css'; // Optional for homepage-specific styling
+import HeaderNew from "../../components/HeaderNew/HeaderNew.jsx";
 
 const Home = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -36,7 +37,8 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <Header isSticky={isSticky} />
+      {/* <Header isSticky={isSticky} /> */}
+      {/* <HeaderNew /> */}
       <Banner />
       <About />
       <WhyChooseUs />

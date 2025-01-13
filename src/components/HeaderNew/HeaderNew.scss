@@ -1,3 +1,75 @@
-.header{
-    background-color: var(--primary-color);
-}
+header {
+    .navbar {
+      display: flex;
+      flex-direction: column; // Align the logo and navbar items vertically
+      align-items: center; // Center align everything
+      justify-content: center;
+      
+      .navbar-toggler {
+        background-color: #fff;  // Set the background to white
+        border: none;  // Remove border for cleaner design
+  
+        .navbar-icon {
+          color: #000;  // Set the icon color to black
+          font-size: 1.5rem;  // Adjust icon size if needed
+        }
+      }
+  
+      .navbar-toggler-icon {
+        background-color: transparent;  // Remove the default background color
+  
+        &::before, &::after, & > span {
+          background-color: #000;  // Set the hamburger bars to black
+        }
+      }
+  
+      .navbar-collapse {
+        display: flex;
+        flex-direction: column; // Stack the navbar items vertically on mobile
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .navbar-nav {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+  
+        .nav-item {
+          margin: 10px 0;
+        }
+  
+        .nav-link {
+          text-decoration: none;
+          color: #000;
+          font-weight: 500;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: #007bff;
+          }
+        }
+  
+        .active {
+          font-weight: bold;
+          color: #007bff;
+        }
+      }
+  
+      // Adjust layout for larger screens (tablets and above)
+      @media (min-width: 768px) {
+        flex-direction: row; // Row layout for larger screens
+        justify-content: space-between;
+        align-items: center;
+  
+        .navbar-collapse {
+          flex-direction: row;  // Row layout for the navbar items on larger screens
+        }
+  
+        .nav-item {
+          margin: 0 15px; // Space out navbar items
+        }
+      }
+    }
+  }
+  

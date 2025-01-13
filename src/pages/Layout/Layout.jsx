@@ -1,13 +1,13 @@
 // src/components/Layout.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
-import HeaderNew from "../HeaderNew/HeaderNew";
-import Footer from "../Footer/Footer";
+import HeaderNew from "../../components/HeaderNew/HeaderNew";
+import Footer from "../../components/Footer/Footer";
 
 const Layout = () => {
   return (
     <>
-      {/* <HeaderNew /> */}
+      <HeaderNew />
       <main>
         <Outlet /> {/* This renders child components (Home, About, etc.) */}
       </main>
