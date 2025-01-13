@@ -1,5 +1,5 @@
 import React from "react";
-import './BannerNew.css';
+import './BannerNew.scss';
 import videoSrc from "../../images/newbannervideo.mp4";
 
 
