@@ -57,8 +57,12 @@ header {
   
         .active {
           font-weight: 700; // Bold for active links
-          color: var(--secondary-color) !important; // Secondary color for active links
+          color: #87b961; // Text and underline color
+          text-decoration: underline; // Enable underline
+          text-decoration-thickness:3px; // Set underline thickness to 4px
+          text-underline-offset: 5px; // Add 4px gap between text and underline
         }
+        
       }
   
       // Adjust layout for larger screens (tablets and above)

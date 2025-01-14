@@ -65,7 +65,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="mt-5">
+    <div className="pt-5 Product">
     <div className="container text-center d-flex flex-column justify-content-center">
       <h1 className="">Our Products</h1>
       <p className="text-center w-75 mx-auto">

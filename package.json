@@ -6,6 +6,7 @@
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@popperjs/core": "^2.11.8",
     "@testing-library/react": "^13.4.0",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",

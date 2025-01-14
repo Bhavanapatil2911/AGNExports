@@ -1,3 +1,12 @@
+.Product{
+  /* background-image: url("../../images/Group\ 2.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* *{
+    color: #FFFFFF;
+  } */
+
+}
 .rice-varieties {
     list-style: none;
     padding: 0;

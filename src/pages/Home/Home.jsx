@@ -44,7 +44,7 @@ const Home = () => {
       <Bannernew />
       <About />
       <WhyChooseUs />
-      <BasmatiRicePage />
+      {/* <BasmatiRicePage /> */}
       <Wedeal/>
       <WhatWeDo /> 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>

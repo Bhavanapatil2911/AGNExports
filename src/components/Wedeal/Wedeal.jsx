@@ -80,20 +80,6 @@ const Wedeal = () => {
           </div>
         </div>
       </section>
-      <img
-  style={{
-    display: "block",
-    WebkitUserSelect: "none", // Use camelCase for CSS properties
-    margin: "auto",
-    cursor: "zoom-in",
-    backgroundColor: "hsl(0, 0%, 90%)",
-    transition: "background-color 300ms"
-  }}
-  src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5300a1bcd1745d6e88c31832/t4.png"
-  width="636"
-  height="364"
-/>
-
     </>
   );
 };
