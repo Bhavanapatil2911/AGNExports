@@ -17,7 +17,7 @@ const Bannernew = () => {
                 <div className="col-md-1 col-0">
 
                 </div>
-                <div className="col-md-4 m-5 p-5 col-9">
+                <div className="col-md-4 m-md-5 p-md-5 col-10">
                     <div className="card p-5">
                         <h1>PREMIUM BASMATI RICE EXPORTS</h1>
                         <p>Whether you're a wholesaler, retailer, or food enthusiast, our export-quality basmati rice is the ideal choice.
