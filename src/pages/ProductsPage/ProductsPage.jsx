@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./ProductsPage.css"; // Include styles for better presentation
 // import Header from "../../components/Header/Header.jsx";
-import BasmatiRice from "../../components/BasmatiRice.jsx"
+import BasmatiRicePage from "../../components/Products/BasmatiRicePage"
 
 
 const ProductsPage = () => {
@@ -66,12 +66,12 @@ const ProductsPage = () => {
 
   return (
     <div className="mt-5">
-    <div className="container py-5 my-5 text-center d-flex flex-column justify-content-center">
-      <h3 className="">Our Products</h3>
+    <div className="container text-center d-flex flex-column justify-content-center">
+      <h1 className="">Our Products</h1>
       <p className="text-center w-75 mx-auto">
         Whether you're a retailer, wholesaler, or distributor, our products are tailored to meet your specific needs, ensuring consistency and excellence in every grain.
       </p>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-md-3 col-12 mb-3">
           <ul className="rice-varieties">
             <li>Basmati Rice <i className="fa-solid fa-angle-down"></i></li>
@@ -81,7 +81,8 @@ const ProductsPage = () => {
           </ul>
         </div>
         <div className="col-md-8 col-12">
-          <BasmatiRice />
+          <BasmatiRicePage />
+
         </div>
       </div>
     </div>

@@ -1,0 +1,28 @@
+.basmati-rice-page{
+    h2{
+        color: #87b961;
+
+    }
+
+
+.ricecard{
+    border-top: 6px solid #87b961;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    .pointer{
+        width: 13px;
+        height: 13px;
+        background-color: #87b961;
+        border-radius: 50%;
+        margin: 10px
+    }
+    .ricetype{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px;
+        text-align: left;
+    }
+    img{
+        height: 100%;
+        width: 100%
+    }
+}
+}

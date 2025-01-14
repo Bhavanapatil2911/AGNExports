@@ -8,7 +8,7 @@ import videoSrc from "../../images/newbannervideo.mp4";
 const Bannernew = () => {
     return(
         <>
-        <div className="bannersection">
+        <div className="bannersection w-100">
             <video autoPlay muted loop className="w-100 p-0">
                     <source src={videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.

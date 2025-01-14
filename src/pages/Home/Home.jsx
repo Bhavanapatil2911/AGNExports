@@ -4,7 +4,7 @@ import Banner from "../../components/Banner/banner.jsx";
 import Bannernew from "../../components/BannerNew/BannerNew.jsx"
 import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
-import RiceCategories from "../../components/Products/RiceCategories.jsx";
+import BasmatiRicePage from "../../components/Products/BasmatiRicePage.jsx";
 import Wedeal from "../../components/Wedeal/Wedeal.jsx"
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo.jsx";
 import Visionmission from "../../components/Visionmission/Visionmission.jsx";
@@ -44,7 +44,7 @@ const Home = () => {
       <Bannernew />
       <About />
       <WhyChooseUs />
-      {/* <RiceCategories /> */}
+      <BasmatiRicePage />
       <Wedeal/>
       <WhatWeDo /> 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
