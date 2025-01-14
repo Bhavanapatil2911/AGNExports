@@ -1,9 +1,10 @@
 
 import React, { useState } from "react";
-import "./ProductsPage.css"; // Include styles for better presentation
+import "./ProductsPage.scss"; // Include styles for better presentation
 // import Header from "../../components/Header/Header.jsx";
 import BasmatiRicePage from "../../components/Products/BasmatiRicePage"
-
+import NonBasmatirice from "../../components/Products/NonBasmatirice"
+import PestisideFree from "../../components/Products/PestisideFree";
 
 const ProductsPage = () => {
   const [isSticky, setIsSticky] = useState(true);
@@ -65,23 +66,27 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="pt-5 Product">
-    <div className="container text-center d-flex flex-column justify-content-center">
+    <div className=" Product">
+    <div className=" text-center d-flex flex-column justify-content-center">
+      <div className="productsheader p-5">
       <h1 className="">Our Products</h1>
-      <p className="text-center w-75 mx-auto">
+      <p className="text-center w-50 mx-auto">
         Whether you're a retailer, wholesaler, or distributor, our products are tailored to meet your specific needs, ensuring consistency and excellence in every grain.
       </p>
-      <div className="row mt-5">
+      </div>
+      <div className="row m-5 ">
         <div className="col-md-3 col-12 mb-3">
-          <ul className="rice-varieties">
+          {/* <ul className="rice-varieties">
             <li>Basmati Rice <i className="fa-solid fa-angle-down"></i></li>
             <li>Non-Basmati Rice <i className="fa-solid fa-angle-down"></i></li>
             <li>Pesticide-Free Rice <i className="fa-solid fa-angle-down"></i></li>
             <li>Other Varieties <i className="fa-solid fa-angle-down"></i></li>
-          </ul>
+          </ul> */}
         </div>
         <div className="col-md-8 col-12">
-          <BasmatiRicePage />
+          {/* <BasmatiRicePage /> */}
+          {/* <NonBasmatirice/> */}
+          <PestisideFree/>
 
         </div>
       </div>

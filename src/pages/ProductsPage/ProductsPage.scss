@@ -1,0 +1,27 @@
+.Product{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   .productsheader{
+    background-image: url("../../images/pixelcut-export.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  h1{
+    font-size: 32px;
+    font-weight: 600;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 600;
+  }
+   }
+
+}
+
+
+  @media (max-width: 576px) {
+
+  }
+  
+  

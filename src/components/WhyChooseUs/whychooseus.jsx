@@ -37,11 +37,11 @@ const WhyChooseUs = () => {
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="col-5 d-flex align-items-center justify-content-center flex-column px-5">
+      <div className="col-md-5 d-flex align-items-center justify-content-center flex-column px-5">
         <h1 className="blockheader">Why Choose Us?</h1>
         <p className="text-center px-5">Choose us for authentic basmati rice delivered with a commitment to quality, sustainability, and excellence. Partner with us for a dependable supply chain that adds value to your business.</p>
       </div>
-      <div className="col-7 d-flex justify-content-center">
+      <div className="col-md-7 d-flex justify-content-center">
         <div className="d-flex flex-column gap-4 card-container my-2 justify-content-center m-0">
           {cardData.map((card, index) => (
             <div className=" card d-flex flex-row align-items-center gap-3 " key={index}>
