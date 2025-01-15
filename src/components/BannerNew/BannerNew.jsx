@@ -17,8 +17,8 @@ const Bannernew = () => {
                 <div className="col-md-1 col-0">
 
                 </div>
-                <div className="col-md-4 m-md-5 p-md-5 col-10">
-                    <div className="card p-5">
+                <div className="col-md-4 m-md-5 p-md-5 col-12">
+                    <div className="card p-md-5 p-3">
                         <h1>PREMIUM BASMATI RICE EXPORTS</h1>
                         <p>Whether you're a wholesaler, retailer, or food enthusiast, our export-quality basmati rice is the ideal choice.
                              Sourced directly from the fertile fields of India, our rice ensures unmatched aroma, length, and taste 
