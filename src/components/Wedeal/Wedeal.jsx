@@ -1,5 +1,5 @@
 import React from "react";
-import './Wedeal.css'
+import './Wedeal.scss'
 import riceimage from "../../images/—Pngtree—basmati rice on wooden background_15524877.png"
 
 

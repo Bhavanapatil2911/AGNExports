@@ -18,6 +18,35 @@
    }
 
 }
+ul{
+  list-style: none;
+  padding: 0!important;
+  background-color: #87b961;
+  color: #FFFFFF;
+}
+li{
+
+}
+.rice-varieties {
+
+
+}
+
+.rice-varieties li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-align:left;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+.category-dropdown{
+
+}
+.varieties-dropdown li{
+
+}
 
 
   @media (max-width: 576px) {
