@@ -10,6 +10,8 @@ import './styles/global.css'; // Optional: Your own global styles
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Bootstrap Icons
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

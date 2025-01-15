@@ -17,33 +17,38 @@ const HeaderNew = () => {
 
   return (
     <>
-      <header >
+      <header>
         <div className="contactdetails">
           {/* Your contact details can go here */}
         </div>
         <nav className="navbar navbar-expand-lg">
-          <div className="d-flex justify-content-between px-4 w-100">
-
+          <div className="d-flex justify-content-between px-4">
             <div className="navbar-brand">
               <Link to="/"><img src={MainLogo} alt="Logo" className="logo" /></Link>
             </div>
 
+            {/* Hamburger button (mobile view toggle) */}
             <button 
               className="navbar-toggler rounded-circle" 
               type="button" 
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" 
-            //   aria-expanded={dropdownOpen ? "true" : "false"} 
+              aria-controls="navbarNav"
+              aria-expanded={dropdownOpen ? "true" : "false"} 
               aria-label="Toggle navigation" 
               onClick={toggleStick} 
             >
               <span className="navbar-icon">
-                <i className="bi bi-list m-0"></i> {/* The icon is black now */}
+                <i className="bi bi-list m-0"></i> {/* Hamburger icon */}
               </span>
             </button>
+            </div>
 
-            <div className={`collapse navbar-collapse mb-2 ${dropdownOpen ? 'show' : ''}`} id="navbarNav">
+            {/* Navbar collapse */}
+            <div 
+              className={`collapse navbar-collapse mb-2 ${dropdownOpen ? 'show' : ''}`} 
+              id="navbarNav"
+            >
               <ul className="navbar-nav">
                 <li className={`nav-item px-2 ${location.pathname === '/' ? 'active' : ''}`}>
                   <Link className="nav-link" to="/">Home</Link>
@@ -60,7 +65,6 @@ const HeaderNew = () => {
               </ul>
             </div>
 
-          </div>
         </nav>
       </header>
     </>

@@ -16,9 +16,9 @@ const ProductsPage = () => {
   return (
     <div className="Product">
       <div className="text-center d-flex flex-column justify-content-center">
-        <div className="productsheader p-5">
+        <div className="productsheader p-md-5 p-3">
           <h1 className="">Our Products</h1>
-          <p className="text-center w-50 mx-auto">
+          <p className="text-center w-md-50 mx-auto">
             Whether you're a retailer, wholesaler, or distributor, our products are tailored to meet your specific needs, ensuring consistency and excellence in every grain.
           </p>
         </div>
