@@ -1,4 +1,5 @@
 import React from 'react';
+import './Rice.scss'
 
 const riceDetails = [
     {
@@ -57,34 +58,8 @@ const riceDetails = [
       mainExportMarkets: "Europe, USA, Australia, Saudi Arabia, Kuwait, Egypt, UAE, Jordan, Oman, Bahrain, Yemen, Syria, Iraq, Libya, Turkey",
       deliveryTime: "15 Days"
     },
-    {
-      riceType: "Pusa Basmati Rice",
-      purity: "95%",
-      averageGrainLength: "8.5 mm",
-      moisture: "12% Max",
-      brokenGrain: "1% Max",
-      damageDiscolourGrain: "Nil",
-      immatureGrain: "Nil",
-      foreignMatter: "Nil",
-      packagingType: "Jute bag, PP bag, Non-woven bag, or as per buyer's choice",
-      supplyAbility: "2000 tons per week",
-      mainExportMarkets: "Europe, USA, Australia, Saudi Arabia, Kuwait, Egypt, UAE, Jordan, Oman, Bahrain, Yemen, Syria, Iraq, Libya, Turkey",
-      deliveryTime: "15 Days"
-    },
-    {
-      riceType: "Traditional Basmati Rice",
-      purity: "95%",
-      averageGrainLength: "7.8 mm",
-      moisture: "12% Max",
-      brokenGrain: "1% Max",
-      damageDiscolourGrain: "Nil",
-      immatureGrain: "-",
-      foreignMatter: "Nil",
-      packagingType: "Jute bag, PP bag, Non-woven bag, or as per buyer's choice",
-      supplyAbility: "1500 tons per week",
-      mainExportMarkets: "India, Nepal, Pakistan, UAE, Saudi Arabia, Oman, Bahrain, Qatar",
-      deliveryTime: "15 Days"
-    }
+
+
 ];
 
 const Rise1211 = () => {
@@ -95,7 +70,9 @@ const Rise1211 = () => {
   ];
 
   return (
-    <table border="1" cellPadding="10" cellSpacing="0">
+    <>
+    <img class="ricetypesimage" src="images/ricetype.jpeg" alt="" />
+    <table border="1" cellPadding="10" cellSpacing="0" class="mt-5">
       <thead>
         <tr>
           <th>Specification</th>
@@ -115,6 +92,7 @@ const Rise1211 = () => {
         ))}
       </tbody>
     </table>
+    </>
   );
 };
 

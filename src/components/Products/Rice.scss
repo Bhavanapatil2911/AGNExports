@@ -1,0 +1,18 @@
+.ricetypesimage{
+    height: 150px;
+    border-radius: 0px;
+}
+
+table{
+    border-radius: 15px;
+    border: 1px solid #87b961;
+    thead{
+        border-radius: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        th{
+            background:#87b961;
+            color:#FFFFFF
+        }
+    }
+}
