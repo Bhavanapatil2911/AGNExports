@@ -54,3 +54,23 @@ li{
   }
   
   
+  .ricetype{
+    list-style: none;
+    text-align: left;
+    li{
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    .subcategory{
+      // list-style: none;
+      text-align: left;
+      li{
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+    }
+  }
