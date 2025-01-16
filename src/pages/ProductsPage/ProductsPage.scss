@@ -61,7 +61,7 @@ li{
       font-size: 18px;
       font-weight: 500;
       padding: 10px;
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
     .subcategory{
       // list-style: none;
@@ -70,6 +70,7 @@ li{
         text-transform: capitalize;
         font-size: 16px;
         font-weight: 600;
+        cursor: pointer;
       }
 
     }

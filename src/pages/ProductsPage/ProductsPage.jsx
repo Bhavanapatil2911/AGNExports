@@ -3,7 +3,12 @@ import "./ProductsPage.scss"; // Include styles for better presentation
 import BasmatiRicePage from "../../components/Products/BasmatiRicePage";
 import NonBasmatirice from "../../components/Products/NonBasmatirice";
 import PestisideFree from "../../components/Products/PestisideFree";
-import Rise1211 from "../../components/Products/Rice-1121";
+import Rice1211 from "../../components/Products/Rice1121";
+import Rice1718 from "../../components/Products/Rice1718"
+import Rice1509 from "../../components/Products/Rice1509"
+import Rice1401 from "../../components/Products/Rice1401"
+import Pusabasmati from '../../components/Products/Pusabasmati';
+import Traditionalrice from '../../components/Products/Traditionalrice';
 
 const ProductsPage = () => {
   // Track only the active product (either a category or a subcategory)
@@ -28,23 +33,23 @@ const ProductsPage = () => {
             Whether you're a retailer, wholesaler, or distributor, our products are tailored to meet your specific needs, ensuring consistency and excellence in every grain.
           </p>
         </div>
-        <div className="row m-5">
+        <div className="row m-md-5 px-md-5 p-3">
           <div className="col-md-3 col-12 mb-3">
             <ul className="ricetype p-0">
               {/* Basmati Rice Category */}
               <li onClick={(e) => handleProductClick("Basmati Rice", e)}>
                 Basmati Rice&nbsp;
                 <ul className="subcategory">
-                  <li onClick={(e) => handleProductClick("Rise1211", e)}>
+                  <li onClick={(e) => handleProductClick("Rice1211", e)}>
                     BASMATI RICE 1121
                   </li>
-                  <li onClick={(e) => handleProductClick("Rise1718", e)}>
+                  <li onClick={(e) => handleProductClick("Rice1718", e)}>
                     1718 BASMATI RICE
                   </li>
-                  <li onClick={(e) => handleProductClick("1509", e)}>1509 BASMATI RICE</li>
-                  <li onClick={(e) => handleProductClick("1401", e)}>1401 BASMATI RICE</li>
-                  <li onClick={(e) => handleProductClick("PUSA", e)}>PUSA BASMATI RICE</li>
-                  <li onClick={(e) => handleProductClick("TRADITIONAL", e)}>TRADITIONAL BASMATI RICE</li>
+                  <li onClick={(e) => handleProductClick("Rice1509", e)}>1509 BASMATI RICE</li>
+                  <li onClick={(e) => handleProductClick("Rice1401", e)}>1401 BASMATI RICE</li>
+                  <li onClick={(e) => handleProductClick("Pusabasmati", e)}>PUSA BASMATI RICE</li>
+                  <li onClick={(e) => handleProductClick("Traditionalrice", e)}>TRADITIONAL BASMATI RICE</li>
                 </ul>
               </li>
 
@@ -83,13 +88,18 @@ const ProductsPage = () => {
             </ul>
           </div>
           
-          <div className="col-md-8 col-12">
+          <div className="col-md-9 col-12">
             {/* Conditional rendering based on the active product */}
             {activeProduct === "Basmati Rice" && <BasmatiRicePage />}
             {activeProduct === "Non Basmati Rice" && <NonBasmatirice />}
             {activeProduct === "Pesticide Free Rice" && <PestisideFree />}
-            {activeProduct === "Rise1211" && <Rise1211 />}
-            {activeProduct === "Rise1718" && <div>1718 BASMATI RICE Page</div>} {/* Example placeholder for another subcategory */}
+            {activeProduct === "Rice1211" && <Rice1211 />}
+            {activeProduct === "Rice1718" && <Rice1718 />}
+            {activeProduct === "Rice1509" && <Rice1509 />}
+            {activeProduct === "Rice1401" && <Rice1401 />}
+            {activeProduct === "Pusabasmati" && <Pusabasmati />}
+            {activeProduct === "Traditionalrice" && <Traditionalrice />}
+
             {/* Add more components for other subcategories as needed */}
           </div>
         </div>
