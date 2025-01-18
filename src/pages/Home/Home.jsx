@@ -12,6 +12,9 @@ import Footer from "../../components/Footer/Footer.jsx";
 import './Home.css'; // Optional for homepage-specific styling
 import HeaderNew from "../../components/HeaderNew/HeaderNew.jsx";
 
+import WHYCHOOSEUS from "../../components/WHYCHOOSEUS/WHYCHOOSEUS.jsx"
+
+
 const Home = () => {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -44,6 +47,7 @@ const Home = () => {
       <Bannernew />
       <About />
       <WhyChooseUs />
+      <WHYCHOOSEUS/>
       {/* <BasmatiRicePage /> */}
       <Wedeal/>
       <WhatWeDo /> 

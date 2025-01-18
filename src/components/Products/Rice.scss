@@ -5,7 +5,7 @@
 
 table{
     border-radius: 15px;
-    border: 1px solid #87b961;
+    border:none;
     border-radius: 10px 0px;
     thead{
         border-radius: 10px 0px;
@@ -16,6 +16,8 @@ table{
 
     }
     tbody{
+        border: 1px solid #87b961;
+
         td{
             font-weight: 14px !important;
             // border-right: 1px solid #87b961;
@@ -31,6 +33,9 @@ table{
       
       tbody tr:nth-child(even) {
         background-color: #e2f5d3; /* Light green background for alternate rows */
+      }
+      tbody tr:last-child {
+        background-color: #FFFFFF; /* Light red background for the last row */
       }
     .requestbtn{
         background-color: #87b961;

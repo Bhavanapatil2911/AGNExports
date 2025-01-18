@@ -21,5 +21,18 @@ a{
     font-weight: 600 !important;
     margin-bottom: 12px;
 }
-  
+
+.headings{
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+@media (max-width: 768px) {
+    .headings {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
   
