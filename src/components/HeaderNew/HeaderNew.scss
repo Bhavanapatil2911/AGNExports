@@ -1,6 +1,10 @@
 header {
-  position: relative !important;
+  position: sticky !important;
+  top: 0px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;  
+  z-index: 99;
+  background-color: #FFFFFF;
 
   .navbar {
     display: flex;
@@ -90,4 +94,13 @@ header {
   width: 170px;
   height: 80px;
   transition: transform 0.3s ease; // Smooth scaling effect
+}
+
+.quotebtn{
+  background: #87b961 !important;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+
 }

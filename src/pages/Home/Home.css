@@ -2,11 +2,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #E9EDBA;
+
 }
 
 .app {
   width: 100%;
   overflow-x: hidden;
+  background-color: #E9EDBA;
+
 }
 .home-page{
   position: relative;

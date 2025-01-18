@@ -21,7 +21,7 @@ const HeaderNew = () => {
         <div className="contactdetails">
           {/* Your contact details can go here */}
         </div>
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg  px-md-5">
           <div className="d-flex justify-content-between px-4">
             <div className="navbar-brand">
               <Link to="/"><img src={MainLogo} alt="Logo" className="logo" /></Link>
@@ -61,6 +61,9 @@ const HeaderNew = () => {
                 </li>
                 <li className={`nav-item px-2 ${location.pathname === '/contact' ? 'active' : ''}`}>
                   <Link className="nav-link" to="/contact">Contact Us</Link>
+                </li>
+                <li className="nav-item">
+                  <button className="quotebtn align-content-around">Get a Quote</button>
                 </li>
               </ul>
             </div>

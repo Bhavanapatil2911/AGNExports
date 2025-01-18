@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import Header from "../../components/Header/Header.jsx";
 import Banner from "../../components/Banner/banner.jsx";
 import Bannernew from "../../components/BannerNew/BannerNew.jsx"
-import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
+// import WhyChooseUs from "../../components/WhyChooseUs/whychooseus.jsx";
 import About from "../../components/About/About.jsx";
 import BasmatiRicePage from "../../components/Products/BasmatiRicePage.jsx";
 import Wedeal from "../../components/Wedeal/Wedeal.jsx"
@@ -12,7 +12,10 @@ import Footer from "../../components/Footer/Footer.jsx";
 import './Home.css'; // Optional for homepage-specific styling
 import HeaderNew from "../../components/HeaderNew/HeaderNew.jsx";
 
+import BannerSection from "../../components/BannerSection/BannerSection.jsx"
 import WHYCHOOSEUS from "../../components/WHYCHOOSEUS/WHYCHOOSEUS.jsx"
+import RICEWEDEAL from "../../components/RICEWEDEAL/RICEWEDEAL.jsx"
+import WHATDOWEDO from "../../components/WHATDOWEDO/WHATDOWEDO.jsx"
 
 
 const Home = () => {
@@ -44,13 +47,15 @@ const Home = () => {
     <div className="home-page">
       {/* <Header isSticky={isSticky} /> */}
       {/* <HeaderNew /> */}
-      <Bannernew />
+      {/* <Bannernew /> */}
+      {/* <BannerSection/> */}
       <About />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <WHYCHOOSEUS/>
-      {/* <BasmatiRicePage /> */}
-      <Wedeal/>
-      <WhatWeDo /> 
+      {/* <Wedeal/> */}
+      <RICEWEDEAL/>
+      {/* <WhatWeDo />  */}
+      <WHATDOWEDO/>
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
   );

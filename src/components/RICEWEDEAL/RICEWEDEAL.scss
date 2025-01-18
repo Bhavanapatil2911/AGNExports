@@ -1,0 +1,35 @@
+.ricewedeal{
+    background: #87b961;
+    background-image: url(../../../public/images/AdobeStock_104337572.jpeg);
+    background-size: cover;
+    color: #FFFFFF;
+    .headings{
+        // color: #87b961 !important;
+        color: #FFFFFF;
+
+    }
+    .ricecards{
+        
+        .card{
+            height: 100%;
+            img{
+                border-radius: 0 ;
+                height: 50%;
+            }
+            ul{
+                list-style: none;
+                padding: 0px;
+                li{
+                    border-bottom: 1px solid rgb(223, 214, 214)
+                };
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headings{
+        font-weight: 600;
+    }
+    
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import "../../styles/global.css"
 import videoSrc from "../../images/184811-874264378_small.mp4";
 
 const About = () => {
@@ -8,8 +9,8 @@ const About = () => {
       <div className="row p-md-4 p-3 m-0 aboutus d-flex justify-content-center">
         <div className="col-md-6">
           <div className="content m-md-5 px-md-5">
-            <h1 className="blockheader text-md-start text-center">About Us</h1>
-            <span>Discover the Essence of Authentic Basmati Rice </span>
+            <h1 className="headings text-md-start text-center">About Us</h1>
+            {/* <span>Discover the Essence of Authentic Basmati Rice </span>
             <p>
               At AGN Exports, we bring you the finest Basmati rice from the
               heart of India, where tradition and quality meet. Our grains are
@@ -17,7 +18,7 @@ const About = () => {
               offering you a premium rice experience. Committed to sustainability
               and excellence, we ensure every grain reflects the rich heritage of
               Indian agriculture.
-            </p>
+            </p> */}
             <span>Your Trusted Partner in Premium Basmati Rice</span>
             <p>
               Based in India, the world’s leading exporter of aromatic Basmati
