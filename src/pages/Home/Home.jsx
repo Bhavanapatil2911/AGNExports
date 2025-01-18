@@ -50,15 +50,16 @@ const Home = () => {
       </div>
       {/* <Header isSticky={isSticky} /> */}
       {/* <HeaderNew /> */}
+
       <Bannernew />
+      <About />
       {/* <BannerSection/> */}
       {/* <WhyChooseUs /> */}
       <WHYCHOOSEUS/>
       {/* <Wedeal/> */}
       <RICEWEDEAL/>
       {/* <WhatWeDo />  */}
-      {/* <WHATDOWEDO/> */}
-      <About />
+      <WHATDOWEDO/>
 
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
