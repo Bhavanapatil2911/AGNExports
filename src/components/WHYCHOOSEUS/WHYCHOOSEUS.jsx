@@ -47,12 +47,12 @@ const WHYCHOOSEUS = () => {
     <>
       <section className="p-md-5 d-flex flex-column justify-content-center align-items-center mb-5 mt-3">
         <h1 className="headings text-center">Why choose Us</h1>
-        <p className=" text-center w-50">
+        <p className=" text-center w-50 d-md-block d-none">
           Choose us for authentic basmati rice delivered with a commitment to
           quality, sustainability, and excellence. Partner with us for a
           dependable supply chain that adds value to your business.
         </p>
-        <div className="content d-flex w-100 m-5 px-md-5 row mb-5">
+        <div className="content d-flex w-100 m-5 px-md-5 row mb-5 gap-md-0 gap-3">
           {cardData.map((feature, index) => (
             <div
               className={`p-0 col-md-3 mb-5 ${
@@ -63,7 +63,7 @@ const WHYCHOOSEUS = () => {
                 <div className="featureicon p-3 ps-5" style={{ backgroundColor: feature.color }}>
                   <img src={feature.image} alt="" className="" />
                 </div>
-                <div className="featuredescript p-3 text-center">
+                <div className="featuredescript p-3 text-center"  style={{left: index % 2 === 0 ? "-10%" : "10%",}}>
                   <span className="title ">{feature.title}</span>
                   <p className="pt-3">{feature.content}</p>
                 </div>
