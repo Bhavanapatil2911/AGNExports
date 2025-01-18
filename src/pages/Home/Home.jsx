@@ -45,9 +45,12 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <div className="backgroundsection">
+
+      </div>
       {/* <Header isSticky={isSticky} /> */}
       {/* <HeaderNew /> */}
-      {/* <Bannernew /> */}
+      <Bannernew />
       {/* <BannerSection/> */}
       <About />
       {/* <WhyChooseUs /> */}

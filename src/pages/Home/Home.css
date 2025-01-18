@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #E9EDBA;
 
 }
 
@@ -13,7 +12,14 @@ body {
 
 }
 .home-page{
+
   position: relative;
+}
+.backgroundsection{
+  position: fixed;
+  background-image: url(../../../public/images/AdobeStock_104337572.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .navigator{
 

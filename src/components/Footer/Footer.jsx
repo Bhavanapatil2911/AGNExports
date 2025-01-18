@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./footer.css";
+import "./footer.scss";
 
-import footerimage from "../../images/footerBg.jpg";
+import footerimage from "../../images/meadow-196567_1920.jpg";
 
 const Footer = () => {
   return (
@@ -47,36 +47,16 @@ const Footer = () => {
             <h4>Contact Details</h4>
             <ul>
               <li>
-                <strong>Address:</strong>D.no:1/75,76,Main bazar Rd,Sri potti sri ramulu colony,Telugu peta,Nandyal,Andhra Pradesh,518501.
+                <strong>Address:</strong>
+                <p className="text-center mt-0">AGN exports imports, Sri potti Sriramulu colony, Nandyal-518501 (Andhra Pradesh) India</p>
               </li>
               <li>
-                <strong>Phone:</strong> +91 9849782405
+                <strong>Phone:</strong> <br />
+                <span>+91 9849782405</span>
               </li>
               <li>
-                <strong>Email:</strong> Gurusainath.saru@gmail.com
-              </li>
-            </ul>
-
-            <h4>Follow Us</h4>
-            <ul className="social-media d-flex gap-3 justify-content-center">
-              <li >
-                <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                  <i className="bi bi-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                  <i className="bi bi-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="bi bi-instagram"></i>
-                </a>
+                <strong>Email:</strong><br />
+                <a href="mailto:gurusainath.saru@gmail.com"><span> Gurusainath.saru@gmail.com</span></a>
               </li>
             </ul>
           </div>

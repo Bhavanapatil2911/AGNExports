@@ -1,12 +1,12 @@
 import React from "react";
 import './BannerSection.scss'
 // import bannerimage from "../../../public/images/AdobeStock_43908831.jpeg"
-
+// import videolink  from "../../images/"
 const BannerSection = () =>{
     return(
         <>
         <section className="BannerSection">
-            <img src="/images/AdobeStock_43908831.jpeg" alt="" className="m-5 bannerimage"/>
+            {/* <video src={videolink}></video> */}
         </section>
         </>
     )
