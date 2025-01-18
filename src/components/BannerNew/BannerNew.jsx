@@ -13,7 +13,7 @@ const Bannernew = () => {
                     <source src={videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-            {/* <div className="row m-0">
+            <div className="row m-0">
                 <div className="col-md-1 col-0">
 
                 </div>
@@ -28,7 +28,7 @@ const Bannernew = () => {
                     </div>
 
                 </div>
-            </div> */}
+            </div>
         </div>
         </>
     )

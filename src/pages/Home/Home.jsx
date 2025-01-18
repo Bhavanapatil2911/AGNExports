@@ -58,7 +58,7 @@ const Home = () => {
       {/* <Wedeal/> */}
       <RICEWEDEAL/>
       {/* <WhatWeDo />  */}
-      <WHATDOWEDO/>
+      {/* <WHATDOWEDO/> */}
       <button className="navigator rounded-circle" onClick={scrollToTop}><i class="fa-solid fa-arrow-up"></i></button>
     </div>
   );

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.scss";
 
-import footerimage from "../../images/meadow-196567_1920.jpg";
+// import footerimage from "../../images/meadow-196567_1920.jpg";
+import footerimage from "../../images/Footerbackground.jpeg";
 
 const Footer = () => {
   return (
